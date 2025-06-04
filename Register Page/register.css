@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1db954;
+}
+
+.register-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:#212121;
+    color: white;
+    padding: 20px 65px;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 17vw;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+.register-box h1{
+    margin-bottom: 20px;
+}
+
+.name-box, .email-box, .password-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-box input, .email-box input, .password-box input{
+    border-color:#1db954;
+    border-radius: 5px;
+    height: 25px;
+    border-style: solid;
+}
+
+.age-input{
+    width: 40px;
+    border-color:#1db954;
+    border-radius: 5px;
+    height: 25px;
+    border-style: solid;
+}
+
+button{
+    height: 35px;
+    width: 135px;
+    align-self: center;
+    background-color: #1db954;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #137435;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 0.8em;
+    margin-top: 3px;
+    display: block;
+}
+input.error-border {
+    border-color: #ff4d4d;
+}
+
+@media screen and (max-width: 800px) {
+
+    form {
+        gap: 10px; 
+    }
+
+    .register-box h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    .name-box input,
+    .email-box input,
+    .password-box input,
+    .age-input {
+        height: 25px;
+        font-size: 0.9em;
+        width: 150px;
+    }
+    .age-input {
+        width: 55px; /* Lebar input usia bisa disesuaikan */
+    }
+
+    button { /* Tombol submit */
+        height: 36px;
+        padding: 0 18px;
+        font-size: 0.95em;
+        /* Kamu bisa buat tombolnya full width di sini jika mau: */
+        /* width: 100%; */
+        /* align-self: stretch; */
+    }
+
+    .error-message {
+        font-size: 0.75em; /* Kecilkan pesan error sedikit */
+    }
+}

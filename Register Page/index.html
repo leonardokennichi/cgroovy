@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="register-box">
+        <h1>C'Groovy</h1>
+        <form  id="registerForm" action="/Home Page/home.html" method="get" novalidate>
+            <div class="name-box">
+                Name
+                <input type="text" name="name" id="nameInput">
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="email-box">
+                Email
+                <input type="email" name="email" id="emailInput">
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="password-box">
+                Password
+                <input type="password" id="passwordInput">
+                <span class="error-message" id="passwordError"></span>
+            </div>
+            <div class="age-box">
+                Age:
+                <input type="number" class="age-input" name="age" id="ageInput">
+                <span class="error-message" id="ageError"></span>
+            </div>
+            <div class="gender-box">
+                <input type="radio" name="gender">
+                Male
+                <input type="radio" name="gender">
+                Female
+                <span class="error-message" id="genderError"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

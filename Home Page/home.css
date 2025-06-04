@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #e0e0e0;
+    background-color: #1f1f1f;
+}
+
+img { 
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #1db954; 
+    text-decoration: none;
+}
+
+.site-header {
+    background-color: #181818;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #1db954;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-left: 25px;
+    position: relative;
+}
+
+.arrow-down{
+    font-size: 1.2em;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #2a2a2a;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    z-index: 1;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content:hover{
+    background-color: #2a2a2a;
+    color: #1db954;
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn, .nav-item a {
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.dropdown-content a, .dropdown-subheader{
+    color: #cccccc;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left; 
+    font-size: 0.9em;
+    font-weight: normal; 
+}
+
+.dropbtn:hover, .navbar .nav-item a.active,
+.navbar .nav-item a:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('/images/2148650367.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.hero-content {
+    max-width: 750px; 
+}
+
+.hero-title {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.15em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #d0d0d0;
+}
+
+.hero-cta-button {
+    background-color: #1db954;
+    color: #1f1f1f;
+    padding: 14px 28px;
+    font-size: 1.05em;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.hero-cta-button:hover {
+    background-color: #17a048;
+}
+
+.content-section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title-centered {
+    font-size: 2em;
+    font-weight: bold;
+    color: #1db954;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.song-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); 
+    gap: 20px;
+}
+
+.song-preview-card {
+    background-color: #2a2a2a; 
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    transition: transform 0.25s ease;
+    padding-bottom: 15px;
+}
+
+.song-preview-card:hover {
+    transform: translateY(-4px);
+}
+
+.song-preview-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.song-preview-title {
+    font-size: 1.05em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 4px;
+    padding: 0 10px;
+}
+
+.song-preview-artist {
+    font-size: 0.85em;
+    color: #b0b0b0;
+    margin-bottom: 12px;
+    padding: 0 10px;
+}
+
+.song-preview-card a{
+    background-color: #1db954;
+    color: #1f1f1f;
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    border: none;
+}
+
+.song-preview-card a:hover {
+    background-color: #17a048;
+}
+
+/* .recommendation-section{
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+} */
+
+.slider-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-arrow{
+    font-size: 2.5em;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+.carousel-arrow:hover{
+    color: #b0b0b0;
+}
+
+.carousel-arrow:active{
+    color: #1db954
+}
+
+.carousel{
+    overflow: hidden;
+    width: 300px;
+    margin: 0 15px;
+}
+
+.carousel-image-container{
+    position: relative;
+    display: flex;
+}
+
+.carousel-items{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-width: 100%;
+    box-sizing: border-box;
+    max-height: 100%;
+}
+
+.carousel-title{
+    font-size: 1.05em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.carousel-artist{
+    font-size: 0.85em;
+    color: #b0b0b0;
+}
+
+.carousel-items img{
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.site-footer {
+    background-color: #181818;
+    color: #888888;
+    text-align: center;
+    padding: 25px 0; 
+    margin-top: 55px; 
+    font-size: 0.85em; 
+    border-top: 1px solid #333;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .navbar .nav-item {
+        margin: 5px 10px; 
+    }
+
+    .hero-section {
+        padding: 60px 20px;
+        min-height: 50vh;
+    }
+    .hero-title {
+        font-size: 2.2em;
+    }
+    .hero-subtitle {
+        font-size: 1.05em;
+    }
+    .hero-cta-button {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+
+    .content-section {
+        padding: 40px 15px;
+    }
+    .section-title-centered {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+
+    .auto-slideshow-container {
+        max-width: 90%;
+    }
+
+    .song-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    .song-preview-card {
+        padding-bottom: 12px;
+    }
+    .song-preview-title {
+        font-size: 1em;
+    }
+    .song-preview-artist {
+        font-size: 0.8em;
+    }
+    .song-preview-card a {
+        padding: 6px 15px;
+        font-size: 0.8em;
+    }
+
+    #recommendedSongCard.song-preview-card {
+        width: 90%; /* Kartu bisa mengambil lebar lebih banyak di mobile */
+        max-width: 300px; /* Batasi agar tidak terlalu lebar di tablet potret misalnya */
+    }
+}
